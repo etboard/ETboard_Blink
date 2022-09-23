@@ -4,11 +4,14 @@
  * Author       : SCS
  * Created Date : 2022.07.24
  * Reference    : 
- * Modified     : 
+ * Modified     : 2022.09.23 : Initialize LED_BUILTIN
  * Modified     : 
 ******************************************************************************************/
 
 void setup() {  
+  pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(LED_BUILTIN, LOW);
+  
   pinMode(D2, OUTPUT);
   pinMode(D3, OUTPUT);
   pinMode(D4, OUTPUT);
